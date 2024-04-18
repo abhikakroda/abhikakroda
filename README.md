@@ -1,7 +1,7 @@
-- 👋 Hi, I’m @abhikakroda
+- 👋 Hi, I’m abhishek kakroda
 - 👀 I’m interested in playing video games
-- 🌱 I’m currently learning ai and web devloping
-- 💞️ I’m looking to collaborate on instagram
+- 🌱 I’m currently learning  web devloping
+- 💞️ I’m from jaipur, Rajasthan
 - 📫 instagram  abhikakroda
 
 <!---
