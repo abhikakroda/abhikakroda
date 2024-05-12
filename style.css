@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -14,56 +15,59 @@ body {
 .hero {
     width: 100%;
     height: 100vh;
-
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 200px;
+    padding: 20px;
+    color: #000000;
 }
 
-.nav .link ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    list-style: none;
+@media screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav .link ul {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        list-style: none;
+    }
+
+    .nav .link ul a {
+        font-size: 16px;
+        text-decoration: none;
+        transition: all 2000ms ease-in-out;
+    }
 }
 
-.nav .link ul a {
-    text-decoration: none;
-    color: #2a2a2a;
-    font-weight: 600;
-    transition: all 2000ms ease-in-out;
-}
-
-ul a .active {
-    color: #f4637b;
+.nav .link ul a.active {
+    color: #0b0b0b;
 }
 
 .nav .link ul a:hover {
-    color: #f4637b;
+    color: #000000;
 }
 
 .main {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 6rem;
-    margin-top: 70px;
-
+    gap: 2rem;
+    margin-top: 40px;
 }
 
 .main .men {
-    width: 400px;
-    transition: all 2000ms ease;
-    cursor: pointer;
-}
-
-.main .men:hover{
-    transform: scale(1.3);
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
 }
 
 .main .main-detil {
@@ -72,60 +76,73 @@ ul a .active {
 }
 
 .main .main-detil h1 {
-    font-size: 50px;
-
+    font-size: 28px;
+    margin-bottom: 10px;
 }
 
 .main .main-detil h4 {
-    font-size: 30px;
+    font-size: 18px;
     margin-bottom: 20px;
 }
 
-.main .btn button {
-    padding: 8px 20px;
+.main .btn button{
+    padding: 4px 10px;
     background: transparent;
-    border-radius: 30px;
+    border-radius: 15px;
     border: 1px solid #2a2a2a;
     margin-right: 1rem;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     cursor: pointer;
 }
 
 .main .btn .btn-2 {
-    padding: 8px 30px;
-    background: #2a2a2a;
-    color: #fff;
-    border: none;
-    outline: none;
+    padding: 4px 10px;
+    background: transparent;
+    border-radius: 15px;
+    border: 1px solid #2a2a2a;
+    margin-right: 1rem;
+    margin-bottom: 10px;
+    cursor: pointer;
     transition: all 2000ms ease-in-out;
+
 
 }
 
 .main .btn .btn-2:hover {
-    background: #f4637b;
+    padding: 4px 10px;
+    background: transparent;
+    border-radius: 15px;
+    border: 1px solid #2a2a2a;
+    margin-right: 1rem;
+    margin-bottom: 10px;
+    cursor: pointer;
     transform: scale(1.1);
+    
 }
 
 .social i {
-    color: #2a2a2a;
-    font-size: 40px;
-    margin: 0px 14px;
+    font-size: 24px;
+    margin: 0 10px;
     transition: all 2000ms ease-in-out;
+    
     cursor: pointer;
 }
 
 .social i:hover {
-    color: #f4637b;
+   
+    color: #fa3cbe;
 }
 
-.sub-btn a{
-    position: absolute;
-    bottom: 60px;
-    right: 50px;
+.sub-btn a {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
     padding: 10px 20px;
-    background: red;
+    font-size: 16px;
+    background-color: #ec2424;
     color: #fff;
-    font-size: 20px;
     text-decoration: none;
-    border-radius: 6px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
+
