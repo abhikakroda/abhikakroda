@@ -1,0 +1,96 @@
+/* Resetting default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.player-stats {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.combat-report, .basic-info, .social-player {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.combat-report h3, .basic-info h3, .social-player h3 {
+    border-left: 3px solid #333;
+    padding-left: 10px;
+}
+
+.combat-report ul li:first-child, .basic-info ul li:first-child, .social-player ul li:first-child {
+    font-weight: bold;
+}
+
+.combat-report ul li:nth-child(2), .basic-info ul li:nth-child(2), .social-player ul li:nth-child(2) {
+    color: #333;
+}
+
+.combat-report ul li:nth-child(odd), .basic-info ul li:nth-child(odd), .social-player ul li:nth-child(odd) {
+    background-color: #f5f5f5;
+}
+
+@media (max-width: 768px) {
+    .player-stats {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .combat-report, .basic-info, .social-player {
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+}
