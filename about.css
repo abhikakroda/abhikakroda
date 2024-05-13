@@ -1,48 +1,67 @@
-/* Style for the About Me section */
+/* Resetting default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
 #about {
-    padding: 40px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
     background-color: #f9f9f9;
 }
 
-#about h2 {
-    font-size: 28px;
-    color: #333;
+h2 {
+    text-align: center;
+    font-size: 24px;
     margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
 }
 
 .about-details {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.about-details h3 {
-    font-size: 20px;
-    color: #333;
+.personal-info, .favorites {
+    flex: 0 0 100%;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.personal-info h3, .favorites h3 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
     margin-bottom: 10px;
 }
 
-.personal-info,
-.favorites {
-    width: 45%;
-}
-
-.personal-info p,
 .favorites p {
-    font-size: 16px;
-    color: #666;
     margin-bottom: 10px;
 }
 
-/* Media query for responsive design */
-@media screen and (max-width: 768px) {
-    .about-details {
-        flex-direction: column;
-    }
-
-    .personal-info,
-    .favorites {
-        width: 100%;
-        margin-bottom: 20px;
+@media (min-width: 768px) {
+    .personal-info, .favorites {
+        flex: 0 0 45%;
+        margin: 0 10px;
     }
 }
+
